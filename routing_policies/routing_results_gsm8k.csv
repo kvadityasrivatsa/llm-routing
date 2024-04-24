@@ -1,0 +1,27 @@
+Model,Accuracy (%),Latency (Sec/prompt)
+Considered LLMs,"['maj_gemma-7b-it_CHAT', 'maj_gemma-7b_LM', 'maj_llama2-13b-chat_CHAT', 'maj_metamath-7b_LM', 'maj_mistral-7b-inst_CHAT', 'maj_mistral-7b-lm_LM']",---
+Classifier-f1-weighted,0.7053674809308303,000
+Oracle,87.18726307808946,3.859391304347826
+Random,55.37801364670209,3.6233322536554033
+['maj_gemma-7b-it_CHAT'],36.84609552691433,0.7
+['maj_gemma-7b_LM'],71.1144806671721,7.1
+['maj_llama2-13b-chat_CHAT'],46.70204700530705,1.7999999999999998
+['maj_metamath-7b_LM'],67.55117513267626,4.7
+['maj_mistral-7b-inst_CHAT'],50.41698256254739,1.0
+['maj_mistral-7b-lm_LM'],59.74222896133434,3.7000000000000006
+"['maj_gemma-7b-it_CHAT', 'maj_metamath-7b_LM']",73.08567096285064,2.683402489626556
+"['maj_gemma-7b_LM', 'maj_metamath-7b_LM']",81.80439727065959,6.786376274328081
+"['maj_llama2-13b-chat_CHAT', 'maj_mistral-7b-inst_CHAT']",63.00227445034117,1.593020457280385
+"['maj_gemma-7b_LM', 'maj_metamath-7b_LM', 'maj_mistral-7b-inst_CHAT']",84.38210765731615,6.609613656783467
+"['maj_gemma-7b-it_CHAT', 'maj_gemma-7b_LM', 'maj_mistral-7b-inst_CHAT']",78.46853677028052,3.7588405797101445
+"['maj_gemma-7b-it_CHAT', 'maj_mistral-7b-inst_CHAT', 'maj_mistral-7b-lm_LM']",72.25170583775588,1.317313746065058
+"['maj_gemma-7b-it_CHAT', 'maj_llama2-13b-chat_CHAT', 'maj_mistral-7b-lm_LM']",70.28051554207732,1.6188781014023732
+"['maj_gemma-7b_LM', 'maj_llama2-13b-chat_CHAT', 'maj_metamath-7b_LM', 'maj_mistral-7b-inst_CHAT']",85.44351781652767,6.471162377994675
+"['maj_gemma-7b-it_CHAT', 'maj_gemma-7b_LM', 'maj_llama2-13b-chat_CHAT', 'maj_mistral-7b-lm_LM']",80.97043214556481,3.828183520599251
+"['maj_gemma-7b-it_CHAT', 'maj_llama2-13b-chat_CHAT', 'maj_mistral-7b-inst_CHAT', 'maj_mistral-7b-lm_LM']",75.5117513267627,1.356425702811245
+"['maj_gemma-7b-it_CHAT', 'maj_gemma-7b_LM', 'maj_llama2-13b-chat_CHAT', 'maj_metamath-7b_LM', 'maj_mistral-7b-inst_CHAT', 'maj_mistral-7b-lm_LM']",87.18726307808946,3.859391304347826
+Upperbound Performance (Classifier),79.68157695223654,5.16022835394862
+Policy1 (ConfArgMax) :,67.62699014404852,4.767264573991031
+Policy2 (Select Random) :,67.47536012130402,4.7674157303370785
+Policy3 (Prediction) :,67.70280515542078,4.767189249720045
+Policy4 (Sorted Prediction) :,59.59059893858984,4.7732824427480915

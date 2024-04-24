@@ -1,0 +1,28 @@
+Model,Accuracy (%),Latency (Sec/prompt)
+Considered LLMs,"['maj_gemma-7b-it_CHAT', 'maj_gemma-7b_LM', 'maj_llama2-13b-chat_CHAT', 'maj_llama2-7b-lm_LM', 'maj_metamath-7b_LM', 'maj_mistral-7b-inst_CHAT', 'maj_mistral-7b-lm_LM']",---
+Classifier-f1-weighted,0.670386187618891,000
+Oracle,89.15032679738563,1.8898826979472139
+Random,52.562810457516505,2.348721446697509
+['maj_gemma-7b-it_CHAT'],49.28104575163399,1.0
+['maj_gemma-7b_LM'],63.85620915032679,3.0
+['maj_llama2-13b-chat_CHAT'],50.52287581699346,4.8
+['maj_llama2-7b-lm_LM'],48.36601307189542,2.3
+['maj_metamath-7b_LM'],42.287581699346404,2.4
+['maj_mistral-7b-inst_CHAT'],51.633986928104584,1.1
+['maj_mistral-7b-lm_LM'],62.091503267973856,1.8
+"['maj_gemma-7b_LM', 'maj_mistral-7b-inst_CHAT']",73.59477124183007,2.7485790408525754
+"['maj_llama2-7b-lm_LM', 'maj_mistral-7b-lm_LM']",70.06535947712418,2.145149253731343
+"['maj_gemma-7b-it_CHAT', 'maj_llama2-13b-chat_CHAT', 'maj_llama2-7b-lm_LM']",74.11764705882354,1.9845679012345678
+"['maj_llama2-7b-lm_LM', 'maj_metamath-7b_LM', 'maj_mistral-7b-inst_CHAT']",71.04575163398692,2.1321987120515176
+"['maj_gemma-7b-it_CHAT', 'maj_llama2-7b-lm_LM', 'maj_mistral-7b-inst_CHAT']",72.54901960784314,1.2893693693693693
+"['maj_gemma-7b_LM', 'maj_llama2-13b-chat_CHAT', 'maj_llama2-7b-lm_LM']",79.15032679738562,3.168208092485549
+"['maj_llama2-7b-lm_LM', 'maj_metamath-7b_LM', 'maj_mistral-7b-lm_LM']",75.42483660130719,2.21421143847487
+"['maj_gemma-7b-it_CHAT', 'maj_gemma-7b_LM', 'maj_llama2-13b-chat_CHAT', 'maj_mistral-7b-inst_CHAT']",82.22222222222221,1.8455484896661365
+"['maj_gemma-7b_LM', 'maj_llama2-13b-chat_CHAT', 'maj_llama2-7b-lm_LM', 'maj_metamath-7b_LM']",82.02614379084967,3.141274900398406
+"['maj_gemma-7b_LM', 'maj_llama2-13b-chat_CHAT', 'maj_llama2-7b-lm_LM', 'maj_mistral-7b-lm_LM']",83.8562091503268,3.091426344505066
+"['maj_gemma-7b-it_CHAT', 'maj_gemma-7b_LM', 'maj_llama2-13b-chat_CHAT', 'maj_llama2-7b-lm_LM', 'maj_metamath-7b_LM', 'maj_mistral-7b-inst_CHAT', 'maj_mistral-7b-lm_LM']",89.15032679738563,1.8898826979472139
+Upperbound Performance (Classifier),74.18300653594771,2.090220264317181
+Policy1 (ConfArgMax) :,62.287581699346404,3.0
+Policy2 (Select Random) :,58.235294117647065,2.993265993265993
+Policy3 (Prediction) :,63.85620915032679,3.0
+Policy4 (Sorted Prediction) :,48.36601307189542,3.0
